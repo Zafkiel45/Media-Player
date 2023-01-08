@@ -11,6 +11,11 @@ body {
 #container-main {
     width: 1000px;
     margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "play1 play2"
+    "play1 play3"
+    ; 
 }
 
 #vertical {
@@ -22,6 +27,8 @@ body {
     background-color: rgb(113, 70, 122);
     margin: 5% 0px 0px 0px;
     border-radius: 1.25em;
+    grid-area: play1;
+    grid-row: play1;
 }
 
 #imagem-container {
@@ -89,6 +96,112 @@ body {
 }
 
 .title-2 {
+    font-size: 1em;
+    color: darkgray;
+}
+
+#horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 470px;
+    height: 370px;
+    background-color: rgb(113, 70, 122);
+    margin: 5% 0px 0px 0px;
+    border-radius: 10px;
+}
+
+#container-identidade {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 10%;
+}
+
+.img-horizontal {
+    height: 130px;
+    width: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 1px 1px 1px rgb(135, 45, 119);
+    position: relative;
+    left: 15px;
+}
+
+#container-name-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: arial;
+    align-items: baseline;
+    position: relative;
+    top: 30px;
+}
+
+#title-horizontal-1 {
+    color: white;
+    font-size: 2em;
+}
+
+#title-horizontal-1-2 {
+    color: darkgray;
+    font-size: 1em;
+}
+
+.button-control-1 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#input-control-1 {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+#duração-1 {
+    display: flex;
+    justify-content: center;
+}
+
+#music-1 {
+    width: 300px;
+    accent-color: pink;
+}
+
+#duração-timer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 17px;
+    color: lightgray;
+    width: 300px;
+    margin: 0px auto;
+}
+
+#horizontal-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 470px;
+    height: 250px;
+    background-color: rgb(113, 70, 122);
+    margin: 5% 0px 0px 0px;
+    border-radius: 10px;
+}
+
+.img2 {
+    width: 100px;
+    height: 100px;
+}
+
+#title-2 {
+    font-size: 1.55em;
+    color: white;
+}
+
+#title2 {
     font-size: 1em;
     color: darkgray;
 }
