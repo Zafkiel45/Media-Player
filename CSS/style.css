@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#container-main {
+    width: 1000px;
+    margin: auto;
+}
+
+#vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(113, 70, 122);
+    margin: 5% 0px 0px 0px;
+    border-radius: 1.25em;
+}
+
+#imagem-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(135, 45, 119);
+    object-fit: cover;
+}
+
+#input-controle-1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.input-controle {
+    background-color: transparent;
+    border: none;
+}
+
+.input-controle:hover {
+    cursor: pointer;
+}
+
+#duração {
+    display: flex;
+    justify-content: center;
+}
+
+#timer-album-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0px auto;
+    color: lightgray;
+    position: relative;
+    bottom: 17px;
+}
+
+#music {
+    width: 200px;
+    accent-color: pink;
+    border: none;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    font-family: arial, Arial, Helvetica, sans-serif;
+}
+
+.title,
+.title-2 {
+    text-align: center;
+    color: white;
+}
+
+.title-2 {
+    font-size: 1em;
+    color: darkgray;
+}
