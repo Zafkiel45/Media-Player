@@ -205,3 +205,20 @@ body {
     font-size: 1em;
     color: darkgray;
 }
+
+.animation {
+    opacity: 0;
+    animation: opacity 0.9s ease-in-out forwards;
+    transition: transform 2s;
+}
+
+@keyframes opacity {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
